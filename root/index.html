@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>webform3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../css/webform3.css" type="text/css" rel="stylesheet">
+    <script src="../js/webform3.js"></script>
+    
+    <link rel="stylesheet" 
+    href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <img src="../image/drawing1.png" alt="logo">
+    <div>
+    <button onclick="myFunction()" id="help">help</button>
+    <iframe  id="tint" src="../video/video.mp4"display="none" ></iframe>
+    </div>
+    <section>
+        
+    <div class="tutorial-wrapper">
+    <form >
+     <fieldset>
+        <div class="field-wrapper">
+            <label >Firstname:</label><br>
+            <input type="text" id="Firstname" name="Firstname" placeholder="firstname" pattern="[A-Za-z]{2,}"   onkeyup="dataform();">
+            <i class="fa fa-user icon"></i> 
+            <span id="error-Firstname"></span>
+        </div>
+
+        <div class="field-wrapper">
+            <label >Lastname:</label><br>
+            <input type="text"  id="Lastname" name="Lastname" placeholder="Lastname"  pattern="[A-Za-z]{2,}" onkeyup="dataform();">
+            <i class="fa fa-user icon"></i> 
+            <span id="error-Lastname"></span>
+        </div>
+
+        <div class="field-wrapper">
+            <label >e-mail:</label><br>
+            <input type="email"  id="email" name="e-mail" placeholder="email" onkeyup="dataform();">
+            <i class="fa fa-envelope icon"></i> 
+            <span id="error-email"></span>
+        </div>
+
+        <div class="field-wrapper">
+            <label >Phone number:</label><br>
+            <input type="number" id="phone" name="phone" placeholder="123-456-7890"  min="400000000" max="499999999"  onkeyup="dataform();" >
+            <i class="fa fa-volume-control-phone"></i>  
+            <span id="error-phone"></span>
+        </div>
+
+        <div class="field-wrapper">
+            <label for="password2">New Password:</label><br>
+            <input type="password" name="password" id="password2" placeholder="password" onkeyup="checkPass();">
+            <i class="fa fa-low-vision"></i>  
+        </div>
+
+        <div class="field-wrapper">
+            <label for="confirm2">Confirm Password:</label><br>
+            <input type="password" name="confirm" id="confirm2" placeholder="confirm-password" onkeyup="checkPass();">
+            <i class="fa fa-low-vision"></i>  
+            <span id="confirm-message2" class="confirm-message"></span>
+        </div>
+
+        <div class="field-wrapper">
+            <label for="checkbox">Agree?</label><br>
+            <input id="checkbox" type="checkbox" name="checkbox">
+        </div>
+    
+       
+    </fieldset>
+    </form>
+    </div>
+    
+   
+
+</section>
+</body>
+</html>

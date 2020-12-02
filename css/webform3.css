@@ -1,0 +1,200 @@
+
+@media screen and (min-width: 600px)  {
+   img{
+    width: 300px;
+    height: 300px;
+
+   }
+
+
+
+   iframe{
+        position: absolute;
+        left: 30%;
+        bottom: 60%;
+        width: 30%;
+        height: 25%;
+        display: none;
+
+   }
+   #help{
+    position: absolute;
+    left: 30%;
+    bottom: 90%;
+    width: 10%;
+    height: 10%;
+    
+
+   }
+ 
+    .tutorial-wrapper{
+        width: 100%;
+       
+    }
+    .tutorial-wrapper form{
+        background-color: #ffc;
+        border: 1px solid #cc9;
+        padding: 10px;
+        font-family: verdana;
+        width: 75%;
+        font-size: 1em;
+      
+    }
+    .field-wrapper{
+        margin: 2px 0 2px 0;
+        padding: 0;
+    }
+    .tutorial-wrapper label{
+        
+        display: inline-block;
+        width: 30%;
+        text-align: left;
+        margin-left: 20%;
+       
+    }
+    .tutorial-wrapper input{
+        width: 30%;
+        border: 1px solid #cc9;
+        margin-left: 20%;
+    }
+    .confirm-message{
+        margin: 0;
+        padding: 0;
+        font-size: .8em;
+    }
+    input:focus{
+        border: solid green 4px;
+    }
+    input:invalid:not(:placeholder-shown){
+        border: solid red 4px;
+    }
+    input:valid{
+        border: solid yellow 4px;
+    }
+    input:hover{
+        background:	#00FFFF;
+    }
+    
+
+
+    .input-icons i { 
+        position: absolute; 
+    } 
+      
+    .input-icons { 
+        width: 100%; 
+        margin-bottom: 10px; 
+    } 
+      
+    .icon { 
+        padding: 10px; 
+        min-width: 40px; 
+    } 
+      
+    .input-field { 
+        width: 100%; 
+        padding: 10px; 
+        text-align: center; 
+    } 
+ 
+    
+    fieldset{
+        display: grid;
+        grid-template-columns:100% ;
+        grid-template-rows: repeat(8,100px);
+    }
+  }
+
+  @media screen and (max-width: 600px)  {
+
+    img{
+        width: 20%;
+        height: 20%;
+    
+       }
+       iframe{
+        position: absolute;
+        left: 30%;
+        bottom: 60%;
+        width: 30%;
+        height: 25%;
+        display: none;
+
+   }
+   #help{
+    position: absolute;
+    left: 30%;
+    bottom: 90%;
+    width: 10%;
+    height: 10%;
+    
+
+   }
+    label{
+        position: absolute; top: -999em;
+    }
+    #checkbox{
+        position: absolute; top: -999em;
+    }
+    .tutorial-wrapper{
+        width: 100%; 
+    }
+    .field-wrapper::before{
+        content:"Write something";
+        color:red;
+        font-size: 12px;
+    }
+    .tutorial-wrapper form{
+        background-color:blue;
+        border: 1px solid #cc9;
+        padding: 10px;
+        font-family: verdana;
+        width: 100%;
+        font-size: 1em;
+      
+    }
+    .field-wrapper{
+        margin: 2px 0 2px 0;
+        padding: 0;
+    }
+    .tutorial-wrapper label{
+        float: left;
+        text-align: right;
+        margin: 0 5px 0 0;
+        width: 40%;
+    }
+    .tutorial-wrapper input{
+        width: 200px;
+        border: 1px solid #cc9;
+    }
+    .confirm-message{
+        margin: 0;
+        padding: 0;
+        font-size: .8em;
+    }
+    input:focus{
+        border: solid green 4px;
+    }
+    input:invalid:not(:placeholder-shown){
+        border: solid red 4px;
+    }
+    input:valid{
+        border: solid yellow 4px;
+    }
+    label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+       
+    }
+    
+    fieldset{
+        display: grid;
+        grid-template-columns:100% ;
+        grid-template-rows: repeat(8,100px);
+    }
+    input:hover{
+        background:		#EEE8AA;
+    }
+
+  }
